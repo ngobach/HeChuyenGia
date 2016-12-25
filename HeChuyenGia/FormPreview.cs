@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 
 namespace HeChuyenGia
 {
-    public partial class FormPreview : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class FormPreview : DevExpress.XtraEditors.XtraForm
     {
         public FormPreview(string s)
         {

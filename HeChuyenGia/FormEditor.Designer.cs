@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditor));
-            this.defaultLookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barBtnOpen = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnSave = new DevExpress.XtraBars.BarButtonItem();
@@ -83,10 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             this.SuspendLayout();
             // 
-            // defaultLookAndFeel
-            // 
-            this.defaultLookAndFeel.LookAndFeel.SkinName = "Office 2016 Colorful";
-            // 
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
@@ -105,7 +99,7 @@
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(821, 146);
+            this.ribbonControl.Size = new System.Drawing.Size(821, 147);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barBtnOpen
@@ -217,11 +211,11 @@
             this.layoutControl1.Controls.Add(this.lstTrieuChung);
             this.layoutControl1.Controls.Add(this.lstBenh);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 146);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 147);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(778, 378, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(821, 478);
+            this.layoutControl1.Size = new System.Drawing.Size(821, 477);
             this.layoutControl1.TabIndex = 6;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -235,7 +229,7 @@
             this.groupControl1.Controls.Add(this.btnAddBenh);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.txtEdit);
-            this.groupControl1.Location = new System.Drawing.Point(12, 383);
+            this.groupControl1.Location = new System.Drawing.Point(12, 382);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(797, 83);
             this.groupControl1.TabIndex = 7;
@@ -320,7 +314,7 @@
             this.gridQuanHe.Location = new System.Drawing.Point(468, 28);
             this.gridQuanHe.MainView = this.gridView;
             this.gridQuanHe.Name = "gridQuanHe";
-            this.gridQuanHe.Size = new System.Drawing.Size(341, 351);
+            this.gridQuanHe.Size = new System.Drawing.Size(341, 350);
             this.gridQuanHe.TabIndex = 6;
             this.gridQuanHe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
@@ -355,7 +349,7 @@
             // 
             this.lstTrieuChung.Location = new System.Drawing.Point(226, 28);
             this.lstTrieuChung.Name = "lstTrieuChung";
-            this.lstTrieuChung.Size = new System.Drawing.Size(238, 351);
+            this.lstTrieuChung.Size = new System.Drawing.Size(238, 350);
             this.lstTrieuChung.StyleController = this.layoutControl1;
             this.lstTrieuChung.TabIndex = 5;
             this.lstTrieuChung.Click += new System.EventHandler(this.lstBenh_Click);
@@ -364,7 +358,7 @@
             // 
             this.lstBenh.Location = new System.Drawing.Point(12, 28);
             this.lstBenh.Name = "lstBenh";
-            this.lstBenh.Size = new System.Drawing.Size(210, 351);
+            this.lstBenh.Size = new System.Drawing.Size(210, 350);
             this.lstBenh.StyleController = this.layoutControl1;
             this.lstBenh.TabIndex = 4;
             this.lstBenh.Click += new System.EventHandler(this.lstBenh_Click);
@@ -380,7 +374,7 @@
             this.layoutControlItem4});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(821, 478);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(821, 477);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -388,7 +382,7 @@
             this.layoutControlItem1.Control = this.lstBenh;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(214, 371);
+            this.layoutControlItem1.Size = new System.Drawing.Size(214, 370);
             this.layoutControlItem1.Text = "Bệnh";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(57, 13);
@@ -398,7 +392,7 @@
             this.layoutControlItem2.Control = this.lstTrieuChung;
             this.layoutControlItem2.Location = new System.Drawing.Point(214, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(242, 371);
+            this.layoutControlItem2.Size = new System.Drawing.Size(242, 370);
             this.layoutControlItem2.Text = "Triệu chứng";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(57, 13);
@@ -408,7 +402,7 @@
             this.layoutControlItem3.Control = this.gridQuanHe;
             this.layoutControlItem3.Location = new System.Drawing.Point(456, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(345, 371);
+            this.layoutControlItem3.Size = new System.Drawing.Size(345, 370);
             this.layoutControlItem3.Text = "Quan hệ";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(57, 13);
@@ -416,7 +410,7 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.groupControl1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 371);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 370);
             this.layoutControlItem4.MaxSize = new System.Drawing.Size(0, 87);
             this.layoutControlItem4.MinSize = new System.Drawing.Size(5, 87);
             this.layoutControlItem4.Name = "layoutControlItem4";
@@ -468,8 +462,6 @@
         }
 
         #endregion
-
-        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageHome;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;

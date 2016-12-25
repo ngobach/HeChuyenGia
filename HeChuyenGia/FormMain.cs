@@ -36,29 +36,18 @@ namespace HeChuyenGia
         /// </summary>
         private void PlInitialized()
         {
-            List<string> dauhieu = new List<string>();
-            HashSet<string> hs = new HashSet<string>();
-            using (var query = new PlQuery("dinh_nghia(Benh, DauHieu)."))
-            {
-                foreach (var sol in query.SolutionVariables)
-                {
-                    string s = sol["DauHieu"].ToString();
-                    if (!hs.Contains(s))
-                    {
-                        dauhieu.Add(sol["DauHieu"].ToString());
-                        hs.Add(s);
-                    }
-                }
-            }
-            lstDauHieu.DataSource = dauhieu;
+            GiaoTiep.DocVao();
+            lstDauHieu.DataSource = GiaoTiep.TapDauHieu();
+            listBoxControl1.DataSource = GiaoTiep.TapBenh();
+            tabPane1.Enabled = true;
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             Environment.SetEnvironmentVariable("SWI_HOME_DIR", @"C:\Program Files (x86)\swipl");
             Environment.SetEnvironmentVariable("Path", Environment.GetEnvironmentVariable("Path") + @";C:\Program Files (x86)\swipl\bin");
-
             status.Caption = "Sẵn sàng";
+            tabPane1.Enabled = false;
         }
 
         private void btnEditor_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -96,6 +85,7 @@ namespace HeChuyenGia
             catch (Exception exc)
             {
                 XtraMessageBox.Show(this, exc.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                throw exc;
             }
         }
 
@@ -124,30 +114,23 @@ namespace HeChuyenGia
                 lstBenh.DataSource = null;
                 return;
             }
-            List<string> result = new List<string>();
-            HashSet<string> hs = new HashSet<string>();
-            string str = string.Join(",", query.Select(x => string.Format("dinh_nghia(Benh, '{0}')", x))) + ".";
-            using (var q = new PlQuery(str))
-            {
-                foreach (var sol in q.SolutionVariables)
-                {
-                    string s = sol["Benh"].ToString();
-                    if (!hs.Contains(s))
-                    {
-                        hs.Add(s);
-                        result.Add(s);
-                    }
-                }
-            }
+            IList<string> result = GiaoTiep.TapBenh(query);
             lstBenh.DataSource = result;
             if (result.Count == 0)
             {
-                XtraMessageBox.Show(this, "Hệ thống không thể chuẩn đoán bệnh với những dấu hiệu này", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.result.Caption = "Không có kết quả";
             }
-            else if (result.Count == 1)
+            else
             {
-                XtraMessageBox.Show(this, "Các dấu hiệu phù hợp với bệnh\n" + result[0], "Chuẩn đoán", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.result.Caption = string.Format("Tìm thấy {0} bệnh phù hợp", result.Count);
             }
+        }
+
+        private void listBoxControl1_Click(object sender, EventArgs e)
+        {
+            if (listBoxControl1.SelectedItem == null) return;
+            string s = listBoxControl1.SelectedItem as string;
+            listBoxControl2.DataSource = GiaoTiep.TapDauHieu(s);
         }
     }
 }
