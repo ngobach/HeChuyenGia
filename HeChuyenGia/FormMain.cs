@@ -101,6 +101,7 @@ namespace HeChuyenGia
             PlEngine.PlCleanup();
             XtraMessageBox.Show(this, "Unload thành công!", "Unload", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             status.Caption = "PlEngine unloaded!";
+            tabPane1.Enabled = false;
         }
 
         private void lstDauHieu_ItemCheck(object sender, DevExpress.XtraEditors.Controls.ItemCheckEventArgs e)

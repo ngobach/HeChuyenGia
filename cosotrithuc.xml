@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Benh>
+    <string>Viem phe quan cap</string>
+    <string>Viem phoi</string>
+    <string>Hen phe quan</string>
+    <string>Phoi tac nghen man tinh</string>
+    <string>Ung thu phoi</string>
+    <string>Tran dich mang phoi</string>
+    <string>Lao phoi</string>
+  </Benh>
+  <TrieuChung>
+    <string>Hat hoi</string>
+    <string>So mui</string>
+    <string>Sot nhe</string>
+    <string>Met moi</string>
+    <string>Dau nhuc co</string>
+    <string>Ho khan</string>
+    <string>Ho co dam</string>
+    <string>Dom co mau la</string>
+    <string>Sot nang</string>
+    <string>Dau tuc nguc</string>
+    <string>Kho tho</string>
+    <string>Kho moi</string>
+    <string>Ngua mui</string>
+    <string>Chay nuoc mui, nuoc mat</string>
+    <string>Long nguc cang len</string>
+    <string>Nhip tho cham</string>
+    <string>Tho kho khe</string>
+    <string>Ho ra mau</string>
+    <string>Dau nguc</string>
+    <string>An kem</string>
+    <string>Sut can</string>
+    <string>Ra mo hoi ve dem</string>
+    <string>Da xanh</string>
+  </TrieuChung>
+  <QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>Hat hoi</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>So mui</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>Sot nhe</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>Met moi</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>Dau nhuc co</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>Ho khan</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phe quan cap</Benh>
+      <TrieuChung>Ho co dam</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phoi</Benh>
+      <TrieuChung>Ho co dam</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phoi</Benh>
+      <TrieuChung>Dom co mau la</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phoi</Benh>
+      <TrieuChung>Sot nang</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phoi</Benh>
+      <TrieuChung>Dau tuc nguc</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phoi</Benh>
+      <TrieuChung>Kho tho</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Viem phoi</Benh>
+      <TrieuChung>Kho moi</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Ngua mui</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Hat hoi</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Chay nuoc mui, nuoc mat</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Kho tho</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Long nguc cang len</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Nhip tho cham</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Hen phe quan</Benh>
+      <TrieuChung>Ho co dam</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Phoi tac nghen man tinh</Benh>
+      <TrieuChung>Ho khan</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Phoi tac nghen man tinh</Benh>
+      <TrieuChung>Ho co dam</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Phoi tac nghen man tinh</Benh>
+      <TrieuChung>Kho tho</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Phoi tac nghen man tinh</Benh>
+      <TrieuChung>Tho kho khe</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Phoi tac nghen man tinh</Benh>
+      <TrieuChung>Met moi</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Phoi tac nghen man tinh</Benh>
+      <TrieuChung>Long nguc cang len</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Ung thu phoi</Benh>
+      <TrieuChung>Sot nang</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Ung thu phoi</Benh>
+      <TrieuChung>Ho khan</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Ung thu phoi</Benh>
+      <TrieuChung>Ho co dam</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Ung thu phoi</Benh>
+      <TrieuChung>Ho ra mau</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Ung thu phoi</Benh>
+      <TrieuChung>Met moi</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Ung thu phoi</Benh>
+      <TrieuChung>Dau nguc</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Tran dich mang phoi</Benh>
+      <TrieuChung>Dau nguc</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Tran dich mang phoi</Benh>
+      <TrieuChung>Ho khan</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Tran dich mang phoi</Benh>
+      <TrieuChung>Tho kho khe</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Tran dich mang phoi</Benh>
+      <TrieuChung>Sot nang</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>An kem</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Sut can</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Sot nhe</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Ra mo hoi ve dem</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Da xanh</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Ho co dam</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Dom co mau la</TrieuChung>
+    </QuanHe>
+    <QuanHe>
+      <Benh>Lao phoi</Benh>
+      <TrieuChung>Ho ra mau</TrieuChung>
+    </QuanHe>
+  </QuanHe>
+</Container>

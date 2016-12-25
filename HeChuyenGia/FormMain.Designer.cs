@@ -468,7 +468,7 @@
             this.layoutControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl3.Location = new System.Drawing.Point(0, 0);
             this.layoutControl3.Name = "layoutControl3";
-            this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1243, 554, 250, 350);
+            this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1126, 554, 250, 350);
             this.layoutControl3.Root = this.layoutControlGroup3;
             this.layoutControl3.Size = new System.Drawing.Size(794, 464);
             this.layoutControl3.TabIndex = 0;
@@ -509,9 +509,9 @@
             this.btnKhong.Enabled = false;
             this.btnKhong.Image = ((System.Drawing.Image)(resources.GetObject("btnKhong.Image")));
             this.btnKhong.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnKhong.Location = new System.Drawing.Point(161, 179);
+            this.btnKhong.Location = new System.Drawing.Point(181, 179);
             this.btnKhong.Name = "btnKhong";
-            this.btnKhong.Size = new System.Drawing.Size(186, 37);
+            this.btnKhong.Size = new System.Drawing.Size(166, 37);
             this.btnKhong.StyleController = this.layoutControl3;
             this.btnKhong.TabIndex = 8;
             this.btnKhong.Text = "Không có";
@@ -524,7 +524,7 @@
             this.btnCo.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnCo.Location = new System.Drawing.Point(12, 179);
             this.btnCo.Name = "btnCo";
-            this.btnCo.Size = new System.Drawing.Size(145, 37);
+            this.btnCo.Size = new System.Drawing.Size(165, 37);
             this.btnCo.StyleController = this.layoutControl3;
             this.btnCo.TabIndex = 7;
             this.btnCo.Text = "Có";
@@ -608,16 +608,16 @@
             this.layoutControlItem8.Control = this.btnCo;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 167);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(149, 41);
+            this.layoutControlItem8.Size = new System.Drawing.Size(169, 41);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.btnKhong;
-            this.layoutControlItem9.Location = new System.Drawing.Point(149, 167);
+            this.layoutControlItem9.Location = new System.Drawing.Point(169, 167);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(190, 41);
+            this.layoutControlItem9.Size = new System.Drawing.Size(170, 41);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
