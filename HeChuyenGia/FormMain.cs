@@ -23,11 +23,6 @@ namespace HeChuyenGia
 
         private void PlInit(string file)
         {
-            if (PlEngine.IsInitialized)
-            {
-                if (XtraMessageBox.Show(this, "Cần unload PlEngine trước khi load file khác?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
-                PlEngine.PlCleanup();
-            }
             string[] args = { "-q" , "-f", file };
             PlEngine.Initialize(args);
             status.Caption = "Load thành công: " + file;
@@ -83,7 +78,13 @@ namespace HeChuyenGia
         {
             var dlg = new OpenFileDialog { Filter = "Prolog file (*.pl)|*.pl" };
             if (dlg.ShowDialog(this) != DialogResult.OK) return;
-            try { 
+            try {
+                if (PlEngine.IsInitialized)
+                {
+                    if (XtraMessageBox.Show(this, "Cần unload PlEngine trước khi load file khác?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                        return;
+                    PlEngine.PlCleanup();
+                }
                 PlInit(dlg.FileName);
                 PlInitialized();
             }
