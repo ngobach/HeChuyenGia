@@ -13,6 +13,9 @@ namespace HeChuyenGia
 {
     public partial class FormMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        private List<string> queryCo = new List<string>();
+        private List<string> queryKhong = new List<string>();
+
         public FormMain()
         {
             InitializeComponent();
@@ -40,6 +43,8 @@ namespace HeChuyenGia
             lstDauHieu.DataSource = GiaoTiep.TapDauHieu();
             listBoxControl1.DataSource = GiaoTiep.TapBenh();
             tabPane1.Enabled = true;
+
+            DoReset();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -112,6 +117,7 @@ namespace HeChuyenGia
             if (query.Count == 0)
             {
                 lstBenh.DataSource = null;
+                this.result.Caption = "Sẵn sàng";
                 return;
             }
             IList<string> result = GiaoTiep.TapBenh(query);
@@ -131,6 +137,62 @@ namespace HeChuyenGia
             if (listBoxControl1.SelectedItem == null) return;
             string s = listBoxControl1.SelectedItem as string;
             listBoxControl2.DataSource = GiaoTiep.TapDauHieu(s);
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            DoReset();
+        }
+
+        private void DoReset()
+        {
+            btnCo.Enabled = btnKhong.Enabled = true;
+            queryCo = new List<string>();
+            queryKhong = new List<string>();
+            labelQueries.Text = "";
+            labelResult.Text  = "";
+            pictureBox.Image = Properties.Resources.ic_computer;
+            DoSuggest();
+        }
+
+        private void DoSuggest()
+        {
+            IList<string> kq, cauhoi;
+            GiaoTiep.Suggest(queryCo, queryKhong, out cauhoi, out kq);
+            if (cauhoi.Count() == 0)
+            {
+                if (kq.Count() == 0)
+                {
+                    // Không có kết quả phù hợp
+                    labelResult.Text = "Không có kết quả phù hợp";
+                    pictureBox.Image = Properties.Resources.ic_error;
+                }
+                else
+                {
+                    // Tìm thấy kết quả phù hợp
+                    labelResult.Text = "Kết quả phù hợp\n" + string.Join("\n", kq);
+                    pictureBox.Image = Properties.Resources.ic_ok;
+                }
+                btnCo.Enabled = btnKhong.Enabled = false;
+            }
+            else
+            {
+                lblCauHoi.Text = cauhoi[0];
+            }
+        }
+
+        private void btnCo_Click(object sender, EventArgs e)
+        {
+            labelQueries.Text += "<size=13><b>[?] " + lblCauHoi.Text + "</b></size>\n<size=11><color=green>Trả lời Có</color></size>\n";
+            queryCo.Add(lblCauHoi.Text);
+            DoSuggest();
+        }
+
+        private void btnKhong_Click(object sender, EventArgs e)
+        {
+            labelQueries.Text += "<size=13><b>[?] " + lblCauHoi.Text + "</b></size>\n<size=11><color=red>Trả lời Không</color></size>\n";
+            queryKhong.Add(lblCauHoi.Text);
+            DoSuggest();
         }
     }
 }
